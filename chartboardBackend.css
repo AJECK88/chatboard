@@ -1,0 +1,138 @@
+*{
+    border: none;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: hsl(0, 0%, 0%);
+  width: 100%;
+  color: white;
+  
+}
+.receiver{
+  width: 50%;
+  background-color: rgb(99, 92, 92);
+  padding: .3em;
+  padding-bottom: 1px;
+  margin-right: 4em;
+  margin: 1em;
+  text-wrap: wrap;
+  border-radius: 10px;
+}
+.sender{
+  width: 50%;
+  background-color: rgb(211, 69, 69);
+  padding: .3em;
+  padding-bottom: 1px;
+  border-radius: 10px;
+  margin: 1em;
+  margin-left: 50%;
+}
+.Box-message{
+  margin-top: 4.5em;
+  margin-bottom: 6.2em;
+  
+}
+textarea{
+  width:80%;
+  max-height: 240px;
+  max-width: 400px;
+  background-color: rgb(34, 32, 32);
+  color: white;
+  font-size: 25px;
+  height: 40px;
+  outline:none;
+  resize: none;
+  padding-top: .3em;
+  padding-left: 1rem;
+  border-radius: 25px 0 0 25px;
+
+}
+
+textarea :is(:focus, :valid){
+  border-color: red;
+}
+textarea::-webkit-scrollbar{
+  width: 0px;
+}
+textarea::placeholder{
+  color: white;
+  font-size: 25px;
+  
+  font-family: 'Times New Roman', Times, serif;
+  padding-left: .5em;
+}
+
+.message{
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  margin-bottom: 0;
+   width: 100%;
+  position: fixed;
+  bottom: 0;
+  max-width: 400px;
+  background-color: rgb(12, 12, 12);
+  
+}
+.InforOF-Person{
+  max-width: 394px;
+  background-color: hsl(0, 4%, 10%);
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  padding: 1em;
+  position: fixed;
+  width: 100%;
+  cursor: pointer;
+}
+.InforOF-Person img{
+  margin-left: 1em;
+  background-color: rgb(201, 151, 58);
+  padding: 10px;
+  
+  border-radius: 50%;
+}
+.send-button{
+  background-color:rgb(34, 32, 32) ;
+  color: white;
+  display: flex;
+  font-size: 25px;
+  align-items: end;
+  border-radius: 0 25px 25px 0;
+  padding: .2em;
+  padding-right: 1rem;
+  max-width: 398px;
+  font-family: 'Times New Roman';
+}
+.sendj-button-Hover:hover{
+  border-radius: 50%;
+  width: 1.2em;
+  height: 1.2em;
+  background-color: #7c6e6e;
+}
+.message-time{
+color: #2b2929;
+width: 100%;
+display: flex;
+justify-content: end;
+border: none;
+padding: none;
+font-family: 'Times New Roman', Times, serif;
+
+margin-top: .2em;
+}
+.dayOfMessage{
+  font-size: 20px;
+  color: #868282;
+  display: flex;
+  justify-content: center;
+  border-bottom:solid #3a3535 1px;
+   
+}
